@@ -223,6 +223,7 @@ class BSTable {
       var $cols = $lastRow.find('td');  //lee campos
       $cols.each(function() {
         let column = this; // Inner function this (column object)
+        console.log(column);
         if ($(column).attr('name')=='bstable-actions') {
           // action buttons column. change nothing
         } else {
